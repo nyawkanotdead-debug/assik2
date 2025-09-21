@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>Сайт Saya no Uta: Отзывы</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="task1.html">Википедия</a>
+        <a href="task2.html">Автор</a>
+        <a href="task3.html" class="active">Анализ</a>
+        <a href="#form-container">Отправить отзыв</a>
+    </div>
+
+    <div class="container-main">
+
+        <h2 id="table-heading">Результаты Лабораторных Исследований</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Образец</th>
+                    <th>Тип Анализа</th>
+                    <th>Результат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Клетка А1</td>
+                    <td>Визуализация</td>
+                    <td>Искажение (B+)</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td>Клетка А2</td>
+                    <td>Мутация ДНК</td>
+                    <td>Успешный (A)</td>
+                </tr>
+                <tr>
+                    <td>Нерв. волокно</td>
+                    <td>Агнозия</td>
+                    <td>Умеренное (C)</td>
+                </tr>
+                <tr>
+                    <td>Почва </td>
+                    <td>Обнаружение Сайи</td>
+                    <td>Отрицательный (A-)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="form-heading">Сообщить о Нарушении Восприятия</h2>
+
+        <form id="form-container">
+            <div class="form-group">
+                <label for="name">Ваше имя (или псевдоним):</label>
+                <input type="text" id="name" name="name" required class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Контактный email:</label>
+                <input type="email" id="email" name="email" required class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="role">Ваше отношение к проекту:</label>
+                <select id="role" name="role" class="input-field">
+                    <option value="student">Исследователь</option>
+                    <option value="teacher">Пациент</option>
+                    <option value="other">Свидетель</option>
+                </select>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Мир кажется вам нормальным?</label>
+                <div>
+                    <input type="radio" id="radio-yes" name="satisfaction" value="yes" required>
+                    <label for="radio-yes">Да (Я вижу людей)</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio-no" name="satisfaction" value="no">
+                    <label for="radio-no">Нет (Вижу плоть)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Опишите, что вы видите (Textarea):</label>
+                <textarea id="comments" name="comments" rows="5" class="input-field"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Отправить Отчет</button>
+        </form>
+
+    </div>
+
+    <footer class="footer" id="footer-link">
+        © 2025 Проект по Web-технологиям.
+    </footer>
+
+</body>
+</html>
